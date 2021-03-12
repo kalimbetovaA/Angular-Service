@@ -1,0 +1,17 @@
+<div>
+  <table>
+    <thead *ngIf="sharedValues.length!=0">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Delete</th>
+    <th>Show Info</th>
+    </thead>
+    <tr *ngFor="let sharedValue of sharedValues">
+      <td>{{sharedValue.name}}</td>
+      <td>{{sharedValue.description}}</td>
+      <td><button (click)="deleteSharedValue(sharedValue)">Delete</button></td>
+      <td><button (click)="setSharedValue(sharedValue)">Show</button></td>
+    </tr>
+
+  </table>
+</div>

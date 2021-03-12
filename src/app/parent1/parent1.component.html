@@ -1,0 +1,9 @@
+<button (click)="getSharedValues()">Get Shared Values</button>
+<div>
+  <div>
+    <app-child1 [sharedValues]="sharedValues" [deleteSharedValue]="deleteSharedValues" [setSharedValue]="setSharedValueForChild" ></app-child1>
+  </div>
+  <div>
+    <app-child2 *ngIf="sharedValue.name!=''" [sharedValue]="sharedValue" [deleteSharedValue]="deleteSharedValues" ></app-child2>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<form>
+  <div >
+    <input type="text" placeholder="Name" [(ngModel)]="sharedValue.name" name="name">
+    <input type="text" placeholder="Description"  [(ngModel)]="sharedValue.description" name="description" >
+    <div>
+      <button  type="button" (click)="addSharedValue(sharedValue)">Add Shared Value</button>
+    </div>
+  </div>
+</form>

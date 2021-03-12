@@ -78,8 +78,8 @@
         "anonymous": "never",
         "asyncArrow": "always",
         "constructor": "never",
-        "method": "never",
-        "named": "never"
+        "method": "always",
+        "named": "always"
       }
     },
     "typedef": [
